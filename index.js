@@ -19,6 +19,10 @@ client.on("messageCreate", (message) => {
   if (message.content.toLowerCase() === "ciao") {
     message.reply("Ciao! 👋");
   }
+
+  if (message.content.toLowerCase() === "feglia") {
+    message.reply("Purtroppo è morto :emote_gls_112:");
+  }
 });
 
 client.login(process.env.DISCORD_TOKEN);
